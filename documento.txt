@@ -1,0 +1,61 @@
+Este programa es un sistema de gestión de inventario utilizando una base de datos 
+SQLite para almacenar y administrar productos. 
+A continuación se describen sus principales funcionalidades:
+
+Características Principales:
+	Base de Datos SQLite: Crea y administra una base de datos SQLite llamada inventario.db.
+	Define una tabla productos con los siguientes campos:
+
+			id: Identificador único autoincremental.
+			nombre: Nombre del producto (no puede ser nulo).
+			descripcion: Breve descripción del producto.
+			cantidad: Cantidad disponible (no puede ser nula).
+			precio: Precio unitario (no puede ser nulo).
+			categoria: Categoría a la que pertenece el producto.
+			
+Funciones de Gestión de Inventario:
+	Ingresando el codigo de producto solicitado vemos los detalles de 
+	datos como nombre, descripción, cantidad.
+
+
+Actualizar Producto:
+	Modifica los datos de un producto existente basado en su ID.
+	Permite dejar campos sin cambios al presionar Enter.
+
+Eliminar Producto:
+	Elimina un producto de la base de datos después de confirmar la acción.
+
+Mostrar Productos:
+	Lista todos los productos registrados en un formato tabular.
+
+Buscar Producto por Nombre:
+	Busca productos cuyo nombre coincida parcialmente con un término ingresado 
+	por el usuario.
+
+Consultar Producto por ID:
+	Muestra los detalles de un producto específico basado en su ID.
+
+Reporte de Bajo Stock:
+	Genera un informe de productos con cantidad menor o igual a un límite especificado 
+	por el usuario.
+
+Interfaz de Usuario:
+	Presenta un menú principal que permite al usuario navegar por las distintas 
+	funcionalidades del programa.
+
+Incluye mensajes de error y confirmación con colores proporcionados 
+por la biblioteca colorama.
+
+	Estructura y Utilidades:
+		Utiliza un diccionario para describir la estructura de los datos 
+		(tipos, restricciones y descripciones de los campos).
+
+Implementa funciones auxiliares como limpieza de pantalla y pausas para mejorar 
+la experiencia del usuario.
+
+Uso General:
+	Al ejecutar el programa,  presenta un menú con opciones numeradas.
+	El usuario ingresa un numero de las opciones del menu.
+	Los datos se almacenan persistentemente en la base de datos inventario.db, 
+	lo que permite mantener el registro entre distintas ejecuciones.
+	
